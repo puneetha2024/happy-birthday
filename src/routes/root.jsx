@@ -1,5 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 
+import { months } from '../components/months/months';
+
 export default function Root() {
   return (
     <>
@@ -17,12 +19,11 @@ export default function Root() {
         </div>
         <nav>
           <ul>
-            <li>
-              <Link to={`/contacts/1`}>Your Name</Link>
-            </li>
-            <li>
-              <Link to={`/contacts/2`}>Your Friend</Link>
-            </li>
+            {months.map((month) => (
+              <li>
+                <Link to={month}>Month {month}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
