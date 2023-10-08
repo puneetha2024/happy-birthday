@@ -292,6 +292,7 @@ i {
   margin-right: 2rem;
   border-radius: 1.5rem;
   object-fit: cover;
+  cursor: pointer;
 }
 
 #contact h1 ~ div {
@@ -379,4 +380,24 @@ i {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.divBig {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 90%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+#contact .imgBig {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  border-radius: 1.5rem;
+  object-fit: cover;
 }

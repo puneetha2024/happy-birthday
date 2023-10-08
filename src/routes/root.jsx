@@ -13,7 +13,6 @@ export async function action() {
 
 export default function Root() {
   const { contacts } = useLoaderData();
-  console.log('contacts: ', contacts);
   return (
     <>
       <div id='sidebar'>

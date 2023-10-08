@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Form, useLoaderData } from 'react-router-dom';
 import { getContact } from '../contacts';
+import Image from '../components/common/Image';
 
 export async function loader({ params }) {
   const contact = await getContact(params.contactId);
@@ -7,6 +9,8 @@ export async function loader({ params }) {
 }
 
 export default function Contact() {
+  // const [isShown, setIsShown] = useState(false);
+
   const { contact } = useLoaderData();
   /*   const contact = {
     first: 'Your',
@@ -19,9 +23,21 @@ export default function Contact() {
 
   return (
     <div id='contact'>
-      <div>
-        <img key={contact.avatar} src={contact.avatar || null} />
+      <Image imgSrc='https://placekitten.com/g/200/200' />
+      {/*       <div>
+        <img
+          // className={`${isShown ? 'imgBig' : ''}`}
+          key={contact.avatar}
+          alt=''
+          src={'https://placekitten.com/g/200/200' || null}
+          onMouseUp={() => setIsShown(true)}
+        />
       </div>
+      {isShown && (
+        <div className='divBig' onMouseUp={() => setIsShown(false)}>
+          <img className='imgBig' alt='' src={'https://placekitten.com/g/200/200' || null}></img>
+        </div>
+      )} */}
 
       <div>
         <h1>
