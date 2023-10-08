@@ -20,7 +20,7 @@ export default function Root() {
         <nav>
           <ul>
             {months.map((month) => (
-              <li>
+              <li key={month}>
                 <Link to={month}>Month {month}</Link>
               </li>
             ))}
