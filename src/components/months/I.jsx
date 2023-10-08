@@ -1,4 +1,5 @@
 import { Form } from 'react-router-dom';
+import Image from '../common/Image/Image';
 
 export default function Contact() {
   const contact = {
@@ -12,9 +13,7 @@ export default function Contact() {
 
   return (
     <div id='contact'>
-      <div>
-        <img key={contact.avatar} src={contact.avatar || null} />
-      </div>
+      <Image imgSrc='https://placekitten.com/g/200/200' />
 
       <div>
         <h1>

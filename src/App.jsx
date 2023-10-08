@@ -8,7 +8,7 @@ import { monthsComponents } from './components/months/months';
 
 const monthsRoute = monthsComponents.map(({ month, component }) => ({ path: month, element: component }));
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Root />,
