@@ -372,15 +372,4 @@ i {
   width: 100%;
 }
 
-@media only screen and (max-width: 1023px) {
-  #sidebar {
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(247, 247, 247, 0.95);
-  }
 
-  #detail {
-    padding: 1rem;
-  }
-}

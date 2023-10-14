@@ -43,4 +43,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ### z-index
 1: for the full screen picture  
-2: sidebar ( for small device )
+2: sidebar ( for small device )  
+3: navigatorButton ( for small device )
