@@ -10,19 +10,18 @@ export default function Root() {
   const handleSidebarOpenCloseState = () => {
     isSidebarOpened ? setIsSidebarOpened(false) : setIsSidebarOpened(true);
   };
+  const handleCloseSidebar = () => setIsSidebarOpened(false);
 
-  const handleGoToHomeButton = () => {
-    handleSidebarOpenCloseState();
-  };
   return (
     <>
-      <button className={`navigatorButton`} onClick={handleSidebarOpenCloseState}>
-        {isSidebarOpened ? 'CLOSE' : 'OPEN'}
-      </button>
+      <NavigatorButton
+        isSidebarOpened={isSidebarOpened}
+        handleSidebarOpenCloseStateCallback={handleSidebarOpenCloseState}
+      />
       <div id='sidebar' className={`${isSidebarOpened ? 'sidebarOpened' : 'sidebarClosed'}`}>
         <h1>
           {' '}
-          <button onClick={handleGoToHomeButton}>
+          <button onClick={handleCloseSidebar}>
             <Link to={'/'}>Go to Home</Link>
           </button>
         </h1>
@@ -31,7 +30,7 @@ export default function Root() {
           <ul>
             {months.map((month) => (
               <li key={month}>
-                <Link to={month} onClick={handleSidebarOpenCloseState}>
+                <Link to={month} onClick={handleCloseSidebar}>
                   Month {month}
                 </Link>
               </li>
