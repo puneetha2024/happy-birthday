@@ -1,8 +1,7 @@
 import { Form, useOutletContext } from 'react-router-dom';
 
 import Image from '../common/Image/Image';
-import example1 from '../images/I/example1.png';
-import example2 from '../images/I/example2.png';
+import importAll from '../../utils/importAll';
 
 export default function Contact() {
   const { isSidebarOpened } = useOutletContext();
@@ -15,9 +14,11 @@ export default function Contact() {
     favorite: true,
   };
 
+  const images = importAll(require.context(`../images/I/`, false, /\.(png|jpe?g|svg)$/));
+
   return (
     <>
-      <Image imgSrc={example1} isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
       <div id='contact'>
         {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
 
@@ -62,7 +63,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Image imgSrc={example2} widthValue='50%' isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
     </>
   );
 }
