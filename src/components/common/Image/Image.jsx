@@ -2,17 +2,17 @@ import { useState } from 'react';
 
 import './Image.css';
 
-const Image = ({ imgSrc }) => {
+const Image = (props) => {
   const [isBigImageShown, setIsBigImageShown] = useState(false);
 
   return (
     <>
       <div>
-        <img className='image' src={imgSrc} alt='' onMouseUp={() => setIsBigImageShown(true)} />
+        <img className='image' src={props.imgSrc} alt='' onMouseUp={() => setIsBigImageShown(true)} />
       </div>
-      {isBigImageShown && (
+      {isBigImageShown && !props.isSidebarOpened && (
         <div className='divBigImage' onMouseUp={() => setIsBigImageShown(false)}>
-          <img className='imgBigImage' src={imgSrc} alt='' />
+          <img className='imgBigImage' src={props.imgSrc} alt='' />
         </div>
       )}
     </>

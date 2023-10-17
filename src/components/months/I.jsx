@@ -1,7 +1,11 @@
-import { Form } from 'react-router-dom';
+import { Form, useOutletContext } from 'react-router-dom';
+
 import Image from '../common/Image/Image';
+import example1 from '../images/I/example1.png';
+import example2 from '../images/I/example2.png';
 
 export default function Contact() {
+  const { isSidebarOpened } = useOutletContext();
   const contact = {
     first: 'I-page',
     last: 'Name',
@@ -14,7 +18,8 @@ export default function Contact() {
   return (
     <>
       <div id='contact'>
-        <Image imgSrc='https://placekitten.com/g/200/200' />
+        <Image imgSrc={example1} />
+        {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
 
         <div>
           <h1>
@@ -57,6 +62,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Image imgSrc={example2} isSidebarOpened={isSidebarOpened} />
     </>
   );
 }

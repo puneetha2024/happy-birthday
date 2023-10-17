@@ -19,7 +19,7 @@ export default function Root() {
       />
       <Sidebar isSidebarOpened={isSidebarOpened} handleCloseSidebarCallback={handleCloseSidebar} />
       <div id='detail'>
-        <Outlet />
+        <Outlet context={{ isSidebarOpened }} />
       </div>
     </>
   );
