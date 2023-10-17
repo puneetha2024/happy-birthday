@@ -17,8 +17,8 @@ export default function Contact() {
 
   return (
     <>
+      <Image imgSrc={example1} isSidebarOpened={isSidebarOpened} />
       <div id='contact'>
-        <Image imgSrc={example1} />
         {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
 
         <div>
@@ -62,7 +62,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Image imgSrc={example2} isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={example2} widthValue='50%' isSidebarOpened={isSidebarOpened} />
     </>
   );
 }

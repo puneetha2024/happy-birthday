@@ -7,11 +7,17 @@ const Image = (props) => {
 
   return (
     <>
-      <div>
-        <img className='image' src={props.imgSrc} alt='' onMouseUp={() => setIsBigImageShown(true)} />
+      <div className='imageContainer'>
+        <img
+          className='image'
+          style={{ width: props.widthValue }}
+          src={props.imgSrc}
+          alt=''
+          onMouseUp={() => setIsBigImageShown(true)}
+        />
       </div>
       {isBigImageShown && !props.isSidebarOpened && (
-        <div className='divBigImage' onMouseUp={() => setIsBigImageShown(false)}>
+        <div className='imgBigImageContainer' onMouseUp={() => setIsBigImageShown(false)}>
           <img className='imgBigImage' src={props.imgSrc} alt='' />
         </div>
       )}

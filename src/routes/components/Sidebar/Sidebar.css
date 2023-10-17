@@ -117,3 +117,9 @@ i {
     padding: 1rem;
   }
 }
+
+@media only screen and (max-width: 1919px) and (min-width: 1024px) {
+  .sidebar {
+    width: 18rem;
+  }
+}
