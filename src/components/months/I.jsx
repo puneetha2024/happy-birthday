@@ -2,6 +2,7 @@ import { Form, useOutletContext } from 'react-router-dom';
 
 import Image from '../common/Image/Image';
 import importAll from '../../utils/importAll';
+import './I.css';
 
 export default function Contact() {
   const { isSidebarOpened } = useOutletContext();
@@ -18,7 +19,10 @@ export default function Contact() {
 
   return (
     <>
-      <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
+      <div className='imageTextContainer'>
+        <Image imgSrc={images['feb_1.png']} isSidebarOpened={isSidebarOpened} />
+        <div>Here I write my text.</div>
+      </div>
       <div id='contact'>
         {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
 

@@ -125,6 +125,7 @@ form[action$="destroy"] button {
   flex: 1;
   padding: 2rem 4rem;
   width: 100%;
+  background: linear-gradient(to top, rgba(207, 255, 254, .3), rgba(249, 247, 217, .3), rgba(252, 226, 206, .3), rgba(255, 193, 243, .2));
 }
 
 #detail.loading {

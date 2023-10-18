@@ -2,10 +2,11 @@
   width: 100%;
   /* height: 12rem; */
   background: #c8c8c8;
-  margin-right: 2rem;
   border-radius: 0.5rem;
   object-fit: contain;
   cursor: pointer;
+  border: 3px dotted rgba(219, 112, 147, .6);
+  box-shadow: 2px 2px 5px rgba(0,0,0, .2), 2px 2px 20px rgba(0,0,0, .35), 2px 2px 5px rgba(0,0,0, .5);
 }
 
 .imageContainer {
