@@ -3,6 +3,7 @@ import { Form, useOutletContext } from 'react-router-dom';
 import Image from '../common/Image/Image';
 import importAll from '../../utils/importAll';
 import './I.css';
+import hth from './HighwayToHell.mp3';
 
 export default function Contact() {
   const { isSidebarOpened } = useOutletContext();
@@ -19,9 +20,16 @@ export default function Contact() {
 
   return (
     <>
+      <div className='audioContainer'>
+        {/* Here we have to import the audio source file and then put it into src tag  */}
+        <audio src={hth} controls autoPlay />
+      </div>
       <div className='imageTextContainer'>
         <Image imgSrc={images['feb_1.png']} isSidebarOpened={isSidebarOpened} />
-        <div>Here I write my text.</div>
+        <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
+        <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
+        <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
+        <div className='textUnderImage'>👇 Here I write my text.</div>
       </div>
       <div id='contact'>
         {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
@@ -67,7 +75,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
     </>
   );
 }

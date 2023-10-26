@@ -5,8 +5,10 @@
 	position: relative;
 	margin: 1em auto;
 	border: solid var(--b) transparent;
-	padding: 1em;
-	/* max-width: 23em; */
+	/* Here still need to check different device size,
+   * For mobile device maybe 1em 	
+	*/
+	padding: 3rem 3rem 1rem;
 	font: 1.25em ubuntu, sans-serif;
 	
 	&::before {
@@ -26,4 +28,18 @@
 		mask: var(--corner) subtract, var(--inner);
 		content: ''
   }
+}
+
+.audioContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.audioContainer audio {
+	width: 660px;
+}
+
+.textUnderImage {
+	padding: 1rem;
+	font-size: 20px;
 }
