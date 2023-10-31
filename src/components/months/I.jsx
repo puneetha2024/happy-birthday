@@ -26,10 +26,10 @@ export default function Contact() {
       </div>
       <div className='imageTextContainer'>
         <Image imgSrc={images['feb_1.png']} isSidebarOpened={isSidebarOpened} />
-        <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
-        <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
-        <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
-        <div className='textUnderImage'>👇 Here I write my text.</div>
+
+        <div className='textUnderImage'>
+          👉 Was it the first time, that I made you laugh a lot , and left a deep impression on you ?
+        </div>
       </div>
       <div id='contact'>
         {/* <Image imgSrc='https://placekitten.com/g/200/200' /> */}
@@ -76,6 +76,9 @@ export default function Contact() {
         </div>
       </div>
       <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example1.png']} isSidebarOpened={isSidebarOpened} />
+      <Image imgSrc={images['example2.png']} widthValue='50%' isSidebarOpened={isSidebarOpened} />
     </>
   );
 }
