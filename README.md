@@ -18,6 +18,9 @@ Deploy the app in the github page.
 The whole app has limit with 500 MB.
 
 
+## Note
+
+Since github page doesn't support browserRouter, we have to use hashRouter instead.
 
 ### z-index
 1: for the full screen picture  
