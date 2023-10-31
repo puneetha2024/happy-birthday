@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/happy-birthday/static/css/main.d16bacb5.css",
-    "main.js": "/happy-birthday/static/js/main.6f907797.js",
+    "main.css": "/happy-birthday/static/css/main.e68a6854.css",
+    "main.js": "/happy-birthday/static/js/main.913baa78.js",
+    "static/media/HighwayToHell.mp3": "/happy-birthday/static/media/HighwayToHell.a150fe79fcd5ffa71ad1.mp3",
+    "static/media/feb_1.png": "/happy-birthday/static/media/feb_1.3e824bc08099ce135583.png",
     "static/media/example2.png": "/happy-birthday/static/media/example2.506c5513827cda2a213c.png",
     "static/media/example1.png": "/happy-birthday/static/media/example1.aff99f67c759541bc444.png",
     "index.html": "/happy-birthday/index.html",
-    "main.d16bacb5.css.map": "/happy-birthday/static/css/main.d16bacb5.css.map",
-    "main.6f907797.js.map": "/happy-birthday/static/js/main.6f907797.js.map"
+    "main.e68a6854.css.map": "/happy-birthday/static/css/main.e68a6854.css.map",
+    "main.913baa78.js.map": "/happy-birthday/static/js/main.913baa78.js.map"
   },
   "entrypoints": [
-    "static/css/main.d16bacb5.css",
-    "static/js/main.6f907797.js"
+    "static/css/main.e68a6854.css",
+    "static/js/main.913baa78.js"
   ]
 }
