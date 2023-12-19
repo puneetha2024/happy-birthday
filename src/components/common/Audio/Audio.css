@@ -1,0 +1,17 @@
+.audioContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.audioContainer audio {
+	width: 660px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .audioContainer {
+		width: 250px;
+	}  
+	.audioContainer audio {
+		width: 250px;
+	}
+}
