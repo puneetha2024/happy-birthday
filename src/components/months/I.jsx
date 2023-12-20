@@ -1,6 +1,5 @@
 import { useOutletContext } from 'react-router-dom';
 
-import Image from '../common/Image/Image';
 import ImageAndText from '../common/ImageAndText/ImageAndText';
 import Audio from '../common/Audio/Audio';
 import importAll from '../../utils/importAll';
