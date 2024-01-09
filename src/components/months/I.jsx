@@ -3,17 +3,16 @@ import { useOutletContext } from 'react-router-dom';
 import ImageAndText from '../common/ImageAndText/ImageAndText';
 import Audio from '../common/Audio/Audio';
 import importAll from '../../utils/importAll';
-import './I.css';
-import hth from './HighwayToHell.mp3';
+import feb from './Feb.mp3';
 
-export default function Contact() {
+export default function Feb() {
   const { isSidebarOpened } = useOutletContext();
 
   const images = importAll(require.context(`../images/I/`, false, /\.(png|jpe?g|svg)$/));
 
   return (
     <>
-      <Audio audioSrc={hth} />
+      <Audio audioSrc={feb} />
       <ImageAndText
         imgSrc={images['feb_1.png']}
         isSidebarOpened={isSidebarOpened}
