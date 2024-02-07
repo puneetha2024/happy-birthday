@@ -5,7 +5,7 @@ import Audio from '../common/Audio/Audio';
 import importAll from '../../utils/importAll';
 import feb from '../audios/Feb.mp3';
 
-export default function Feb() {
+export default function April() {
   const { isSidebarOpened } = useOutletContext();
 
   const images = importAll(require.context(`../images/III/`, false, /\.(png|jpe?g|svg)$/));
