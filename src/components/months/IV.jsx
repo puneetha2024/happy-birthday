@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 import ImageAndText from '../common/ImageAndText/ImageAndText';
 import Audio from '../common/Audio/Audio';
 import importAll from '../../utils/importAll';
-import feb from '../audios/Feb.mp3';
+import may from '../audios/May.mp3';
 
 export default function May() {
   const { isSidebarOpened } = useOutletContext();
@@ -12,7 +12,7 @@ export default function May() {
 
   return (
     <>
-      <Audio audioSrc={feb} />
+      <Audio audioSrc={may} />
       <ImageAndText
         imgSrc={images['may_1.png']}
         isSidebarOpened={isSidebarOpened}
